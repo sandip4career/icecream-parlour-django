@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<div class="container px-0">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="/static/img/this1.avif" class="d-block w-100" alt="Delicious Ice Cream Cone">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Delicious Ice Cream Cone</h5>
+                    <p>You will definitely love it!</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="/static/img/this2.avif" class="d-block w-100" alt="Artisan Ice Cream Scoops">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Artisan Ice Cream Scoops</h5>
+                    <p>You will definitely love it!</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="/static/img/this3.avif" class="d-block w-100" alt="Ice Cream Bowl">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ice Cream Bowl</h5>
+                    <p>You will definitely love it!</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<div class="container px-0 my-3">
+    <h1 class="my-4 text-center">Select from a range of ice-cream</h1>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+            <!-- Card 1: Chocolate -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=500&h=300&q=80" class="card-img-top" alt="Chocolate Ice Cream" style="height: 225px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text">Rich Belgian dark chocolate scoop topped with roasted nuts and chocolate drizzle.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-body-secondary">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Vanilla -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=500&h=300&q=80" class="card-img-top" alt="Vanilla Ice Cream" style="height: 225px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text">Creamy classic Madagascar vanilla bean with a waffle crunch.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-body-secondary">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Strawberry -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=500&h=300&q=80" class="card-img-top" alt="Strawberry Ice Cream" style="height: 225px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text">Fresh strawberry swirl churned with organic sweet cream.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-body-secondary">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Pistachio / Gelato -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1576506295286-5cda18df43e7?auto=format&fit=crop&w=500&h=300&q=80" class="card-img-top" alt="Pistachio Gelato" style="height: 225px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text">Roasted pistachio crunch gelato with hints of cardamom.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-body-secondary">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Mango Sorbet -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1580915411954-282cb1b0d780?auto=format&fit=crop&w=500&h=300&q=80" class="card-img-top" alt="Mango Sorbet" style="height: 225px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text">Alphonso mango sorbet made with ripe seasonal mangoes.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-body-secondary">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Caramel Sundae -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1560008511-11c63416e52d?auto=format&fit=crop&w=500&h=300&q=80" class="card-img-top" alt="Caramel Ice Cream" style="height: 225px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text">Salted caramel swirl with buttery toffee bits.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-body-secondary">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7: Cookies and Cream -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1516559828984-fb3b99548b21?auto=format&fit=crop&w=500&h=300&q=80" class="card-img-top" alt="Cookies and Cream" style="height: 225px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text">Cookies and cream with chunky crushed chocolate cookies.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-body-secondary">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8: Mint Chocolate -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=500&h=300&q=80" class="card-img-top" alt="Mint Chocolate Chip" style="height: 225px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text">Mint chocolate chip made with garden mint and dark flakes.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-body-secondary">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9: Coffee Mocha -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?auto=format&fit=crop&w=500&h=300&q=80" class="card-img-top" alt="Coffee Ice Cream" style="height: 225px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text">Rich coffee mocha infused with freshly roasted espresso beans.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-body-secondary">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock body %}

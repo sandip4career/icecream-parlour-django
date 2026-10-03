@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="fw-bold">Our Menu & Treats</h1>
+        <p class="text-muted">Choose a category to explore our flavors and options.</p>
+
+        <!-- Category Filter Buttons -->
+        <ul class="nav nav-pills justify-content-center gap-2 mt-4" id="menuTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active px-4 py-2 rounded-pill fw-semibold" id="icecream-tab" data-bs-toggle="pill" data-bs-target="#icecream" type="button" role="tab">
+                    🍨 Scoops & Ice Cream
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link px-4 py-2 rounded-pill fw-semibold" id="softy-tab" data-bs-toggle="pill" data-bs-target="#softy" type="button" role="tab">
+                    🍦 Softy Swirls
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link px-4 py-2 rounded-pill fw-semibold" id="family-tab" data-bs-toggle="pill" data-bs-target="#familypack" type="button" role="tab">
+                    📦 Family Packs & Tubs
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Tab Content Panels -->
+    <div class="tab-content" id="menuTabsContent">
+
+        <!-- 1. Ice Cream Tab -->
+        <div class="tab-pane fade show active" id="icecream" role="tabpanel">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Belgian Dark Chocolate" style="height: 220px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Belgian Dark Truffle</h5>
+                            <p class="text-muted small">Rich 70% dark chocolate slow-churned with fudge swirls.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold fs-5 text-primary">₹120</span>
+                                <span class="badge bg-light text-dark border">Single Scoop</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Alphonso Mango" style="height: 220px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Alphonso Mango Treat</h5>
+                            <p class="text-muted small">Real Ratnagiri mango pulp blended into whole farm milk.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold fs-5 text-primary">₹110</span>
+                                <span class="badge bg-light text-dark border">Single Scoop</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Strawberry Bliss" style="height: 220px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Wild Strawberry Bliss</h5>
+                            <p class="text-muted small">Hand-picked fresh strawberries with thick clotted cream.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold fs-5 text-primary">₹100</span>
+                                <span class="badge bg-light text-dark border">Single Scoop</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Softy Tab -->
+        <div class="tab-pane fade" id="softy" role="tabpanel">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1580915411954-282cb1b0d780?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Classic Vanilla Softy" style="height: 220px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Classic Vanilla Bean Cone</h5>
+                            <p class="text-muted small">Whipped light and airy in a crisp, freshly baked waffle cone.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold fs-5 text-primary">₹50</span>
+                                <span class="badge bg-light text-dark border">Waffle Cone</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Chocolate Vanilla Twist" style="height: 220px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Choco-Vanilla Twist</h5>
+                            <p class="text-muted small">The dual swirl dipped in warm chocolate hardening shell.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold fs-5 text-primary">₹70</span>
+                                <span class="badge bg-light text-dark border">Dip Cone</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Family Pack Tab -->
+        <div class="tab-pane fade" id="familypack" role="tabpanel">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Kesar Pista Tub" style="height: 220px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Royal Kesar Pista Tub</h5>
+                            <p class="text-muted small">Loaded with Iranian saffron and roasted pistachio chunks.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold fs-5 text-primary">₹320</span>
+                                <span class="badge bg-light text-dark border">750 ml Tub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1557142046-c704a3adf364?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Sundae Party Tub" style="height: 220px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Cookies & Cream Party Pack</h5>
+                            <p class="text-muted small">Vanilla cream packed with crunchy dark cookie crumbles.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold fs-5 text-primary">₹290</span>
+                                <span class="badge bg-light text-dark border">1 Litre Tub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock body %}
