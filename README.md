@@ -263,35 +263,8 @@ Django View
 
 ---
 
-## 📸 Screenshots
+## Link
 
-Add screenshots of your project here after uploading them to GitHub.
-
-### 🏠 Home Page
-
-```text
-Add your homepage screenshot here
-```
-
-### 🍨 Product Catalogue
-
-```text
-Add your product catalogue screenshot here
-```
-
-### 📩 Contact Page
-
-```text
-Add your contact page screenshot here
-```
-
-### ⚙️ Django Admin
-
-```text
-Add your Django admin screenshot here
-```
-
----
 
 ## 📚 Django Concepts Demonstrated
 
